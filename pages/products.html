@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magnet Store | Products</title>
+    <link rel="stylesheet" href="/css/products.css">
+    <link rel="stylesheet" href="https://magnet-ui.netlify.app/magnet.css">
+    <script src="https://kit.fontawesome.com/ca8fcf3462.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="/assets/icon.png" type="image/x-icon" />
+
+</head>
+
+<body>
+    <div class="products-page">
+        <header class="header-container">
+            <a href="/index.html" class="logo-container">
+                <img src="/assets/icon.png" alt="logo" class="brand-logo">
+                <span class="brand-name">Magnet Store </span>
+            </a>
+            <div class="header-links mx-auto">
+                <ul class="list-style-none inline-list">
+                    <li class="secondary-text-color mr-64">
+                        <a href="/index.html" >Home</a>
+                    </li>
+                    <li class="secondary-text-color mr-64">
+                        <a href="/pages/products.html" class="active-link">Products</a>
+                    </li>
+                    <li class="secondary-text-color">
+                        <a href="#">Trending</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="search-input mx-auto">
+                <a class="fas fa-search search-icon"></a>
+                <label for="searchbar"></label>
+                <input class="input-round input-sm" type="text" name="searchbar" id="searchbar"
+                    placeholder="Search products..." />
+            </div>
+
+
+            <div class="header-icons ml-auto mr-16">
+                <a href="/pages/sign-up.html" class="far fa-user number-badge-iframe"></a>
+
+                <div class="position-relative">
+                    <a class="far fa-heart number-badge-iframe" href="/pages/wishlist.html"></a>
+                    <div class="badge badge-status-busy badge-md-size badge-number">4</div>
+                </div>
+
+                <div class="position-relative">
+                    <a class="fas fa-shopping-bag number-badge-iframe" href="/pages/cart.html"></a>
+                    <div class="badge badge-status-busy badge-md-size badge-number">4</div>
+                </div>
+                <button class="btn primary-btn">Logout</button>
+            </div>
+        </header>
+
+        <div class="filter-container">
+            <div class="filter-title">
+                <p class="text-bold-weight">FILTERS</p>
+                <a class="btn link-btn">CLEAR ALL</a>
+            </div>
+            <div class="filter-divider-line"></div>
+            <div class="filter-section">
+                <p class="text-bold-weight filter-section-title">SORT</p>
+                <label for="low-to-high" class="form-label">
+                    <input type="radio" id="low-to-high" name="sort" class="input-checkbox">
+                    Price - Low to High
+                </label>
+                <label for="high-to-low" class="form-label">
+                    <input type="radio" id="high-to-low" name="sort" class="input-checkbox">
+                    Price - High to Low
+                </label>
+            </div>
+            <div class="filter-divider-line"></div>
+            <div class="filter-section">
+                <p class="text-bold-weight filter-section-title">PRICE</p>
+                <input type="range" min="0" max="5000" step="1000" class="slider" list="tickmarks">
+                <datalist id="tickmarks" class="slider-datalist">
+                    <option value="0" label="0"></option>
+                    <option value="1000" label="1K"></option>
+                    <option value="2000" label="2K"></option>
+                    <option value="3000" label="3K"></option>
+                    <option value="4000" label="4K"></option>
+                    <option value="5000" label="5K"></option>
+                </datalist>
+            </div>
+            <div class="filter-divider-line"></div>
+            <div class="filter-section">
+                <p class="text-bold-weight filter-section-title">CATEGORIES</p>
+                <label for="bowls" class="form-label">
+                    <input type="checkbox" id="bowls" name="category" class="input-checkbox">
+                    Bowls
+                </label>
+                <label for="plates" class="form-label">
+                    <input type="checkbox" id="plates" name="category" class="input-checkbox">
+                    Bowls
+                </label>
+                <label for="glassware" class="form-label">
+                    <input type="checkbox" id="glassware" name="category" class="input-checkbox">
+                    Glassware
+                </label>
+                <label for="dinner-set" class="form-label">
+                    <input type="checkbox" id="dinner-set" name="category" class="input-checkbox">
+                    Dinner Set
+                </label>
+                <label for="drinkware" class="form-label">
+                    <input type="checkbox" id="drinkware" name="category" class="input-checkbox">
+                    Drinkware
+                </label>
+            </div>
+            <div class="filter-divider-line"></div>
+            <div class="filter-section">
+                <p class="text-bold-weight filter-section-title">BRANDS</p>
+                <label for="Corelle" class="form-label">
+                    <input type="checkbox" id="Corelle" name="brands" class="input-checkbox">
+                    Corelle
+                </label>
+                <label for="Corelle" class="form-label">
+                    <input type="checkbox" id="Corelle" name="brands" class="input-checkbox">
+                    Corelle
+                </label>
+                <label for="Corelle" class="form-label">
+                    <input type="checkbox" id="Corelle" name="brands" class="input-checkbox">
+                    Corelle
+                </label>
+                <label for="Clay-Craft" class="form-label">
+                    <input type="checkbox" id="Clay-Craft" name="brands" class="input-checkbox">
+                    Clay Craft
+                </label>
+                <label for="Treo" class="form-label">
+                    <input type="checkbox" id="Treo" name="brands" class="input-checkbox">
+                    Treo
+                </label>
+            </div>
+            <div class="filter-divider-line"></div>
+            <div class="filter-section">
+                <p class="text-bold-weight filter-section-title">RATINGS</p>
+                <label for="4-stars" class="form-label">
+                    <input type="radio" id="4-stars" name="rating" class="input-checkbox">
+                    4 Stars & above
+                </label>
+                <label for="3-stars" class="form-label">
+                    <input type="radio" id="3-stars" name="rating" class="input-checkbox">
+                    3 Stars & above
+                </label>
+                <label for="2-stars" class="form-label">
+                    <input type="radio" id="2-stars" name="rating" class="input-checkbox">
+                    2 Stars & above
+                </label>
+                <label for="1-stars" class="form-label">
+                    <input type="radio" id="1-stars" name="rating" class="input-checkbox">
+                    1 Stars & above
+                </label>
+            </div>
+            <div class="filter-divider-line"></div>
+            <div class="filter-section">
+                <p class="text-bold-weight filter-section-title">AVAIABILITY</p>
+                <label for="availability" class="form-label">
+                    <input type="checkbox" id="availability" name="availability" class="input-checkbox">
+                    Include Out Of Stock
+                </label>
+            </div>
+        </div>
+
+        <main class="main-container">
+            <div class="flex-row">
+                <div class="vertical-card-container">
+                    <img class="card-image" src="/assets/bowls.jpg" alt="card image">
+
+                    <div class="card-content">
+                        <h6 class="card-title">Snack Bowl</h6>
+                        <p class="card-info p-sm">Nitori snack bowls that may be combined with the Nitori dinner plates
+                            to create a plate and bowl set.</p>
+                        <p class="text-bold-weight p-sm">
+                            Rs.899
+                            <span class="text-light-weight">
+                                <span class="text-strike-through">
+                                    Rs.999
+                                </span>
+                            </span>
+                            <span class="primary-text-color">
+                                10%
+                            </span>
+                        </p>
+                        <div class="btn-container p-sm">
+                            <a href="#" class="mr-16">
+                                <button class="btn primary-btn">
+                                    <i class="fas fa-shopping-cart mr-16">
+                                    </i>Add to cart
+                                </button>
+                            </a>
+                            <a href="#">
+                                <button class="btn outline-secondary-btn">
+                                    Move to wishlist
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vertical-card-container">
+                    <div class="card-badge-container">
+                        <img class="card-image" src="/assets/glassware.jpg" alt="card image">
+                        <span class="card-badge">New</span>
+
+                    </div>
+
+                    <div class="card-content">
+                        <h6 class="card-title pos-relative">Cocktail Glass
+                        </h6>
+                        <p class="card-info p-sm">The elegant cocktail glass with a spiral straw is nothing short of
+                            sophistication. </p>
+
+                        <p class="text-bold-weight p-sm">
+                            Rs.899
+                            <span class="text-light-weight">
+                                <span class="text-strike-through">
+                                    Rs.999
+                                </span>
+                            </span>
+                            <span class="primary-text-color">
+                                10%
+                            </span>
+                        </p>
+
+                        <div class="btn-container p-sm">
+                            <a href="#" class="mr-16">
+                                <button class="btn primary-btn">
+                                    <i class="fas fa-shopping-cart">
+                                    </i>Add to cart
+                                </button>
+                            </a>
+                            <a href="#">
+                                <button class="btn outline-secondary-btn">
+                                    Move to wishlist
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vertical-card-container">
+                    <div class="overlay-container">
+                        <div class="card-badge-container">
+                            <img class="card-image" src="/assets/dinner-set.jpg" alt="card image">
+                            <span class="card-badge">New</span>
+                        </div>
+
+                        <div class="card-content">
+                            <h6 class="card-title">Ceramic Dinner Set</h6>
+                            <p class="card-info p-sm">For anyone new to ceramics, the chich and modern dinner set
+                                containing a plate, bowl, spoon, and mug.</p>
+                            <p class="text-bold-weight p-sm">
+                                Rs.899
+                                <span class="text-light-weight">
+                                    <span class="text-strike-through">
+                                        Rs.999
+                                    </span>
+                                </span>
+                                <span class="primary-text-color">
+                                    10%
+                                </span>
+                            </p>
+
+                            <div class="btn-container p-sm">
+                                <a href="#" class="mr-16">
+                                    <button class="btn primary-btn">
+                                        <i class="fas fa-shopping-cart">
+                                        </i>Add to cart
+                                    </button>
+                                </a>
+                                <a href="#">
+                                    <button class="btn outline-secondary-btn">
+                                        Move to wishlist
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-text-overlay">
+                        Out Of Stock
+                    </div>
+                </div>
+
+                <div class="vertical-card-container">
+                    <img class="card-image" src="/assets/plates.jpg" alt="card image">
+
+                    <div class="card-content">
+                        <h6 class="card-title">Ceramic Side Dish</h6>
+                        <p class="card-info p-sm">The ceramic plate with unique and modern patterns is perfect for
+                            serving side dishes.</p>
+
+                        <p class="text-bold-weight p-sm">
+                            Rs.899
+                            <span class="text-light-weight">
+                                <span class="text-strike-through">
+                                    Rs.999
+                                </span>
+                            </span>
+                            <span class="primary-text-color">
+                                10%
+                            </span>
+                        </p>
+
+                        <div class="btn-container p-sm">
+                            <a href="#" class="mr-16">
+                                <button class="btn primary-btn">
+                                    <i class="fas fa-shopping-cart">
+                                    </i>Add to cart
+                                </button>
+                            </a>
+                            <a href="#">
+                                <button class="btn outline-secondary-btn">
+                                    Move to wishlist
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
