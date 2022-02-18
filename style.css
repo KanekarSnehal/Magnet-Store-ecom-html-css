@@ -38,8 +38,8 @@
 .content {
     margin: 2rem;
     text-align: center;
-    color: var(--primary-color);
-    background-color: var(--secondary-lighter);
+    color: var(--secondary-lighter);
+    background-color: var(--secondary-dark);
     width: 30%;
     height: fit-content;
     padding: 1rem;
@@ -87,7 +87,11 @@
 .text-bottom {
     position: absolute;
     bottom: 0;
-    right: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: var(--size-32);
-    color: var(--bg-color);
+    color: var(--secondary-lighter);
+    background-color: var(--secondary-dark);
+    width: fit-content;
+    padding: 0 1rem;
 }
