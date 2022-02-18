@@ -1,5 +1,8 @@
 @import url(/css/header.css);
 @import url(/css/main.css);
+@import url(/css/scroll.css);
+@import url(/css/cart.css);
+@import url(/css/filter.css);
 .spacer-3rem {
     width: 100%;
     height: 3rem;
