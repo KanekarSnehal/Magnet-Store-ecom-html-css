@@ -3,6 +3,7 @@
 @import url(/css/scroll.css);
 @import url(/css/cart.css);
 @import url(/css/filter.css);
+@import url(/css/auth.css);
 .spacer-3rem {
     width: 100%;
     height: 3rem;
